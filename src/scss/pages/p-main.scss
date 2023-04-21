@@ -1,0 +1,9 @@
+@use "../foundation/theme" as *;
+@use "../foundation/media" as *;
+@use "../layout" as *;
+@use "../component" as *;
+@use "../utility/animations" as *;
+
+.p-main {
+  color: $color-key;
+}

@@ -1,0 +1,26 @@
+$base-point-sp: 375px;
+$base-point-xs: 319px;  // iPhone 5/SE 325
+$base-point-sp: 319px;  // iPhone 6/7/8/x/xs 375
+$base-point-sm: 413px;  // iPhone 6/7/8 Plus 414
+$base-point-md: 768px;  // iPad
+$base-point-pad-ex: 834px;  // iPad
+$base-point-lg: 960px;  // PC min
+$base-point-pad: 1024px;  // iPad
+$base-point-pad2: 1112px;  // iPad pro
+$base-point-xl: 1279px; // PC max
+$breakpoints: (
+  'xs': 'screen and (max-width: #{$base-point-xs})',
+  'sp': 'screen and (max-width: #{$base-point-sp})',
+  'sm': 'screen and (max-width: #{$base-point-sm})',
+  'md': 'screen and (max-width: #{$base-point-md})',
+  'mdx': 'screen and (max-width: #{$base-point-pad-ex})',
+  'lg': 'screen and (max-width: #{$base-point-lg})',
+  'pad': 'screen and (max-width: #{$base-point-pad})',
+  'pad-pro': 'screen and (max-width: #{$base-point-pad2})',
+  'xl': 'screen and (max-width: #{$base-point-xl})',
+) !default;
+@mixin media($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

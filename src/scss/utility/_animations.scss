@@ -1,0 +1,18 @@
+.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+.fadeIn {
+  animation: fadeIn 0.9s ease 0.3s 1 normal forwards;
+}
+.fadeOut {
+  animation: fadeOut 0.9s ease 0.3s 1 normal forwards;
+}
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+@keyframes fadeOut {
+  0% {opacity: 1}
+  100% {opacity: 0}
+}
